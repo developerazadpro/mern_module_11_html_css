@@ -1,0 +1,111 @@
+
+    :root {
+      --primary-color: #FF0000;
+      --secondary-color: #0000FF;
+      --font-size-heading: 24px;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; /* Remove default body margin */
+      padding: 0; /* Remove default body padding */
+    }
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+      transition: color 0.3s ease; /* Add transition effect for color change */
+    }
+
+    a:hover {
+      color: var(--secondary-color);
+    }
+
+    a:active {
+      color: #00FF00; /* Different color when link is clicked */
+    }
+
+    h1 {
+      color: var(--primary-color);
+      font-size: var(--font-size-heading);
+      text-align: center;
+    }
+
+    .container {
+      background-color: #EEEEEE;
+      width: 500px;
+      height: 300px;
+      margin: 20px auto; /* Center the container and add margin */
+      padding: 20px; /* Add padding to the container */
+    }
+
+    ul li:first-child {
+      font-weight: bold;
+    }
+
+    img {
+      width: 500px;
+      height: 150px;
+      margin-bottom: 20px; /* Add margin to the image */
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td {
+      border: 1px solid var(--secondary-color);
+      padding: 5px;
+    }
+
+    tr:hover {
+      background-color: #FFFF00;
+    }
+
+    th {
+      background-color: #CCCCCC;
+      padding: 5px;
+    }
+
+    td:first-child {
+      background-color: #FF00FF;
+    }
+
+    tr:last-child td {
+      background-color: #00FFFF;
+    }
+
+    /* Add decorative content using pseudo-elements */
+    h1::before {
+      margin-right: 5px;
+    }
+
+    .container::after {
+      content: "";
+      display: table;
+      clear: both; /* Clear floats within the container */
+    }
+
+    /* Box model properties */
+    p {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    table {
+      margin-bottom: 20px;
+    }
+
+    th,
+    td {
+      padding: 10px;
+    }
+
+    th {
+      border-bottom: 2px solid var(--secondary-color);
+    }
